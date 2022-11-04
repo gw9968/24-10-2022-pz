@@ -8,16 +8,19 @@ int main()
 
     double a, b, mz = 0;
 
-    cout << "y = ax + b";
+    cout << "y = ax + b" << endl;;
     cout << "Podaj a: ";
 
     cin >> a;
     cout << "Podaj b: ";
     cin >> b;
 
+    if(a == 0){
+	cout << "Nie dziel przez zero!";
+    }else{
     mz = -b / a;
     cout << "Miejsce zerowe " << mz;
-
+    }
 
     return 0;
 }
